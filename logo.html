@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"/>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .logo>h1{
+            color: blue;
+        }
+        .head3{
+            color: orange;
+        }
+        .intro{
+            background-color: aqua;
+        }
+        .intro,ul{
+            display: flex;
+            margin-left: 400px;
+        }
+        ul>li{
+            margin: 10px 40px;
+            list-style: none;
+            text-decoration:none;
+        }
+        li{
+            cursor: pointer;
+        }
+        
+        .main>li{
+            list-style: none;
+            margin: 10px 40px;
+        }
+        .logo,.main{
+            display: flex;
+            margin-left: 200px;
+        }
+        .company_logo{
+            margin-left: 300px;
+            
+        }
+        .head3{
+            padding-left: 200px;
+        }
+        /* .text{
+            position:relative !important
+        } */
+        .title{
+            position:absolute !important;
+            z-index: 13;
+            top: 32rem !important;
+            /* left: 300px; */
+            color: #ffffff;
+            
+        }
+         .title>h2{
+            transform: translateX(150px);
+         }
+         .title>div{
+            transform: translateX(150px);
+         }
+        .back{
+            position:absolute !important;
+            z-index: 12;
+            top:30rem !important;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            /* align-items: center; */
+            /* line-height: normal; */
+            font-size: 30px;
+            /* background-image: url */
+            /* background-size: cover; */
+            width: 50%;
+            height: 150px;
+            /* margin: 10px 40px; */
+            color: #000000;
+            /* padding-top: 200px;
+            padding-bottom: 360px; */
+            background-color: rgb(0, 65, 122);
+            opacity: 0.3;
+            border-radius: 3%;
+            color: #ffffff;
+        }
+
+        .content{   
+            display: flex;
+            /* justify-content: space-evenly; */
+            /* background-color: orange; */
+            
+        }
+        .iconsFeatures{
+            background-color: orangered;
+            color: white;
+            border-radius: 10px;
+            height: 130px;
+            width: 170px;
+            /* color: #ffffff; */
+            text-align: center;
+            padding: 40px;
+            padding-top: 20px;
+            transition: transform 0.2s ease-in;
+        }
+
+        .iconsFeatures:hover{
+
+            transform: scale(1.2);
+            background-color: blue;
+            color: #ffffff;
+        }
+        /* .hov1:hover{
+            color: blue;
+            cursor: pointer;
+            transform: scale(1.3);
+            border: 2px solid blue;
+            height: 50px;
+            width: 50px;
+        }
+        .hov2:hover{
+            color: blue;
+            cursor: pointer;
+        }
+        .hov3:hover{
+            color: blue;
+            cursor: pointer;
+        }
+        .hov4:hover{
+            color: blue;
+            cursor: pointer;
+        }
+        .hov5:hover{
+            color: blue;
+            cursor: pointer;
+        }
+        .hov6:hover{
+            color: blue;
+            cursor: pointer;
+        }
+        .hov7:hover{
+            color: blue;
+            cursor: pointer;
+        }
+        .hov8:hover{
+            color: blue;
+            cursor: pointer;
+        }
+        .hov9:hover{
+            color: blue;
+            cursor: pointer;
+        } */
+        
+        .dynamic{
+            padding-top: 100px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .dynamic div{
+            text-align: center;
+        }
+
+        .showcase{
+            color: orangered;
+            padding: 100px 50px 50px 150px;
+        }
+        
+        video{
+            padding-left: 150px;
+        }
+        .showcase_content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 150px;
+            
+        }
+        .showcase_content>div{
+            padding-left: 50px;
+            padding-right: 100px;
+            
+        }
+        button{
+            margin-top: 20px;
+            border-radius: 10px;
+            padding: 10px;
+            color: #ffffff;
+            background-color: orangered;
+
+        }
+
+        .client{
+            padding-bottom: 20px;
+            text-align: center;
+            color: orangered;
+        }
+        .image{
+            margin-left: 650px;
+            margin-top: 100px;
+        }
+
+        .client_content{
+            text-align: center;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        .slides{
+            padding-bottom: 150px;
+        }
+
+        .footer1{
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            background-color: rgb(90, 87, 87);
+            color: #ffffff;
+            
+        }
+        .footer1 ol{
+            list-style: none;
+        }
+        footer li{
+            line-height: 35px;
+            
+        }
+        footer svg{
+            margin-left: 10px;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        ol h2{
+            line-height: 50px;
+        }
+        ol li:hover{
+            color: orangered;
+        }
+
+        
+        
+
+    </style>
+</head>
+<body>
+    
+    <section class="mpars">
+        <nav class="intro">
+            <ul>
+                <li>Careers</li>
+                <li>Testimonials</li>
+                <li>Contact Us</li>
+                <li>Login</li>
+            </ul>
+
+        </nav>
+
+    </section>
+
+    <section>
+        <nav class="logo">
+
+            <h1>MPARS FRIEGHT </h1>
+            
+
+        <ol class="main">
+            <li>About Us </li>
+            <li>Services</li>
+            <li>Corporate Communication</li>
+            <li>Networks</li>
+        </ol>
+
+        </nav>
+    </section>
+    <img class="company_logo" src="../Documents/logo.jpg" alt="img err" width="100px">
+
+    <h3 class="head3">LOGISTICS PVT LTD</h3>
+
+
+    
+
+
+    
+        <div class="back">
+        </div>
+        
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="https://www.motorindiaonline.in/wp-content/uploads/2022/10/HERE-pic-1.jpg" class="d-block w-100" alt="Img Err" height="700px">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://wallpaperaccess.com/full/1621333.jpg" class="d-block w-100" alt="img err" height="700px">
+            </div>
+            <div class="carousel-item">
+                <img src="https://thumbs.dreamstime.com/b/foreman-engineer-logistic-containers-export-import-cargo-ship-industrial-container-concept-207225149.jpg" class="d-block w-100" alt="img err" height="700px">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        
+        </div>
+    
+
+    <div class="title">
+        <h2 style="opacity: 1;">Integrated Logistics Solution</h2>
+        <div>The Whole World of Logistics at your Fingertips</div>
+    </div>
+        
+   
+
+   
+    <section class="content">
+        <div class="iconsFeatures">
+            <div class="hov1">
+                <svg fill="#000000" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 410.657 410.657" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M409.582,213.69c-1.713-3.095-5.212-4.864-9.6-4.864H263.593c-4.011,0-8.839-3.267-10.328-6.993l-23.682-59.205 c-2.801-7.004-10.902-12.488-18.447-12.488h-95.297V75.935h38.469v27.103c0,2.417,1.957,4.371,4.371,4.371 c2.415,0,4.372-1.955,4.372-4.371V75.06c0-4.338-3.529-7.869-7.869-7.869h-40.217c-4.338,0-7.868,3.531-7.868,7.869v55.08H74.748 c-8.196,0-14.863,6.667-14.863,14.863v20.983c0,2.417,1.957,4.372,4.371,4.372c2.415,0,4.372-1.955,4.372-4.372v-20.983 c0-3.375,2.747-6.12,6.12-6.12h136.388c4.014,0,8.841,3.266,10.329,6.992l23.681,59.205c2.802,7.003,10.906,12.488,18.447,12.488 h136.389c1.28,0,1.877,0.303,1.929,0.303c0.033,0.15-0.024,0.816-0.704,1.906l-67.565,108.104 c-2.278,3.646-8.047,6.842-12.347,6.842H59.009c-3.974,0-8.687-3.265-10.082-6.987L9.084,221.485 c-0.455-1.21-0.462-2.274-0.02-2.913c0.442-0.638,1.439-1.004,2.733-1.004H32.78c2.415,0,4.372-1.955,4.372-4.371 c0-2.414-1.957-4.371-4.372-4.371H11.797c-4.205,0-7.819,1.738-9.919,4.767c-2.1,3.03-2.457,7.027-0.981,10.963l39.845,106.251 c2.661,7.099,10.686,12.659,18.267,12.659h262.286c7.244,0,15.923-4.811,19.761-10.951l67.564-108.104 C410.948,220.69,411.297,216.785,409.582,213.69z"></path> <path d="M143.919,227.139h42.807c2.415,0,4.371-1.957,4.371-4.371c0-2.415-1.957-4.372-4.371-4.372h-42.807 c-8.923,0-16.181,7.257-16.181,16.18v26.46H90.779c-8.923,0-16.18,7.256-16.18,16.179v25.257c0,2.415,1.957,4.371,4.372,4.371 c2.413,0,4.372-1.956,4.372-4.371v-25.257c0-4.1,3.336-7.437,7.437-7.437h135.803c4.101,0,7.437,3.337,7.437,7.437v25.257 c0,2.415,1.959,4.371,4.372,4.371c2.414,0,4.371-1.956,4.371-4.371v-25.257c0-8.923-7.257-16.179-16.18-16.179h-90.1v-26.46 C136.481,230.477,139.817,227.139,143.919,227.139z"></path> <path d="M143.918,288.253v9.509c0,4.101-3.336,7.437-7.437,7.437h-34.935c-2.413,0-4.371,1.957-4.371,4.372 c0,2.414,1.958,4.371,4.371,4.371h34.935c8.923,0,16.18-7.257,16.18-16.18v-9.509c0-2.415-1.957-4.371-4.371-4.371 C145.876,283.882,143.918,285.838,143.918,288.253z"></path> <path d="M169.071,283.882c-2.415,0-4.372,1.956-4.372,4.371v9.509c0,8.923,7.256,16.18,16.18,16.18h34.933 c2.415,0,4.371-1.957,4.371-4.371c0-2.415-1.956-4.372-4.371-4.372h-34.933c-4.101,0-7.437-3.336-7.437-7.437v-9.509 C173.442,285.838,171.484,283.882,169.071,283.882z"></path> </g> </g> </g></svg>
+
+                <div>International Forwarding</div>
+            </div>
+        </div>
+
+        <div class="iconsFeatures">
+            <div class="hov2">
+                <svg fill="#000000" width="50px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M15.17 7.36 13 4.92a1.25 1.25 0 0 0-.94-.42h-2V2.75A1.25 1.25 0 0 0 8.82 1.5H1.76A1.25 1.25 0 0 0 .51 2.75v8.5a1.25 1.25 0 0 0 1.25 1.25h.33a2.07 2.07 0 0 0 2.13 2 2.08 2.08 0 0 0 2.14-2H10a2.07 2.07 0 0 0 2.13 2 2.08 2.08 0 0 0 2.14-2 1.26 1.26 0 0 0 1.2-1.25V8.19a1.22 1.22 0 0 0-.3-.83zM4.22 13.25a.82.82 0 0 1-.88-.75.82.82 0 0 1 .88-.75.83.83 0 0 1 .89.75.83.83 0 0 1-.89.75zm4.6-7.58v5.58H5.89a2.17 2.17 0 0 0-1.67-.75 2.17 2.17 0 0 0-1.66.75h-.8v-8.5h7.06zm1.25.08h2l1.44 1.63h-3.44zm2.08 7.5a.82.82 0 0 1-.88-.75.82.82 0 0 1 .88-.75.83.83 0 0 1 .89.75.83.83 0 0 1-.89.75zm0-2.75a2.17 2.17 0 0 0-1.66.75h-.42V8.62h4.17v2.63h-.42a2.17 2.17 0 0 0-1.67-.75z"></path></g></svg>
+                <div>Project Logistics</div>
+            </div>
+        </div>
+
+        <div class="iconsFeatures">
+            <div class="hov3">
+                <svg fill="#000000" width="50px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 508.14 508.14" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M286.875,77.8h-216.4c-7.8,0-14.1,6.3-14.1,14.1c0,7.8,6.3,14.1,14.1,14.1h216.4c7.8,0,14.1-6.3,14.1-14.1 C300.975,84.1,294.675,77.8,286.875,77.8z"></path> </g> </g> <g> <g> <path d="M240.775,158.6h-170.3c-7.8,0-14.1,6.3-14.1,14.1c0,7.8,6.3,14.1,14.1,14.1h170.3c7.8,0,14.1-6.3,14.1-14.1 C254.875,164.9,248.575,158.6,240.775,158.6z"></path> </g> </g> <g> <g> <path d="M166.675,239.4h-96.2c-7.8,0-14.1,6.3-14.1,14.1c0,7.8,6.3,14.1,14.1,14.1h96.2c7.8,0,14.1-6.3,14.1-14.1 C180.775,245.7,174.475,239.4,166.675,239.4z"></path> </g> </g> <g> <g> <path d="M494.675,434.8l-68-68c7-15.3,10.9-32.2,10.9-50.1c0-52.4-33.6-97-80.4-113.6V42.2c0-23.3-19-42.2-42.3-42.2h-272.5 c-23.3,0-42.3,18.9-42.3,42.2v282c0,11.3,4.4,21.9,12.4,29.9l67.8,67.9c8,8,18.6,12.4,29.9,12.4h179.6c8.7,2,17.8,3.2,27.1,3.2 c17.9,0,34.7-4,50-11l68.1,68.1c16.7,16.7,40.6,19.1,59.7,0C512.975,476.3,512.075,452.2,494.675,434.8z M84.475,386.3h-0.1 l-36.2-36.3h36.3V386.3z M112.575,406.1v-70.2c0-7.8-6.3-14.1-14.1-14.1h-70.2V42.2c0-7.8,6.3-14.1,14.1-14.1h272.7 c7.8,0,14.1,6.3,14.1,14.1v154.4c-4-0.4-8.1-0.6-12.2-0.6c-66.6,0-120.8,54.2-120.8,120.7c0,35.5,15.5,67.3,39.9,89.4H112.575z M316.875,409.3c-51.1,0-92.6-41.5-92.6-92.6c0-51.1,41.5-92.6,92.6-92.6c51.1,0,92.6,41.5,92.6,92.6 C409.475,367.8,367.975,409.3,316.875,409.3z M474.775,474.6c-5.3,5.3-14.6,5.3-19.9,0l-63.2-63.2c7.4-5.8,14.1-12.5,19.9-19.9 l63.2,63.2C480.575,460.5,480.375,469.1,474.775,474.6z"></path> </g> </g> </g></svg>
+                <div>Customs Brokerage</div>
+            </div>
+        </div>
+
+        <div class="iconsFeatures">
+            <div class="hov4">
+                <svg width="50px"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.cls-1,.cls-2{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.92px;}.cls-2{stroke-linecap:square;}</style> </defs> <g id="office"> <line class="cls-1" x1="11.04" y1="14.88" x2="12.96" y2="14.88"></line> <line class="cls-1" x1="11.04" y1="11.04" x2="12.96" y2="11.04"></line> <line class="cls-1" x1="11.04" y1="7.21" x2="12.96" y2="7.21"></line> <line class="cls-1" x1="7.21" y1="14.88" x2="9.13" y2="14.88"></line> <line class="cls-1" x1="7.21" y1="11.04" x2="9.13" y2="11.04"></line> <line class="cls-1" x1="7.21" y1="7.21" x2="9.13" y2="7.21"></line> <line class="cls-1" x1="14.88" y1="14.88" x2="16.79" y2="14.88"></line> <line class="cls-1" x1="14.88" y1="11.04" x2="16.79" y2="11.04"></line> <line class="cls-1" x1="14.88" y1="7.21" x2="16.79" y2="7.21"></line> <rect class="cls-2" x="9.13" y="18.71" width="5.75" height="3.83"></rect> <line class="cls-1" x1="23.5" y1="22.54" x2="0.5" y2="22.54"></line> <polygon class="cls-2" points="16.79 3.38 16.79 1.46 7.21 1.46 7.21 3.38 4.33 3.38 4.33 22.54 19.67 22.54 19.67 3.38 16.79 3.38"></polygon> </g> </g></svg>
+                <div>Infrastructure</div>
+            </div>
+        </div>
+
+        <div class="iconsFeatures">
+            <div class="hov5">
+                <svg fill="#000000" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 384.014 384.014" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M379.642,320.896l-48.96-0.006c-2.415,0-4.371,1.957-4.371,4.371c-0.002,15.846-10.997,26.916-26.739,26.916 c-8.921-0.002-15.799-2.455-20.442-7.299c-7.392-7.703-7.035-19.219-7.029-19.422c0.002-0.033,0.604-4.568-4.366-4.568 l-172.29-0.008c-2.415,0-4.371,1.955-4.371,4.371C91.07,341.62,78.747,354.94,63.6,354.94 c-15.146-0.002-27.468-12.326-27.468-27.475c0.002-7.338,2.861-14.236,8.049-19.424c5.186-5.188,12.081-8.043,19.416-8.043h0.009 c5.615,0,9.138,0.936,13.086,3.309c1.922,1.154,6.66,0.609,6.66-3.725l0.011-221.612c0-15.812-4.496-30.158-12.662-40.389 c-9.003-11.284-21.862-17.25-37.185-17.25h-0.01c-11.179,0-22.63,3.095-31.42,8.487c-2.058,1.266-2.702,3.957-1.439,6.012 c1.264,2.056,3.955,2.698,6.012,1.441c7.346-4.512,17.379-7.199,26.848-7.199h0.008c12.571,0,23.067,4.828,30.354,13.958 c6.933,8.692,10.752,21.096,10.752,34.936l-0.01,214.803c-3.256-1.041-6.762-1.516-11.002-1.516h-0.011 c-9.669,0-18.76,3.764-25.599,10.602c-6.838,6.838-10.606,15.934-10.608,25.607c0,19.967,16.243,36.215,36.211,36.217 c18.574,0,33.919-14.92,35.974-34.061l163.989,0.008c0.546,5.309,2.488,14.201,9.184,21.229 c6.361,6.676,15.386,10.061,26.825,10.062c19.073,0,33.275-12.92,35.229-31.287l44.842,0.006c2.415,0,4.372-1.957,4.372-4.371 C384.014,322.851,382.057,320.896,379.642,320.896z"></path> <path d="M101.62,158.995h29.726c7.232,0,13.114,5.882,13.114,13.114v125.898c0,2.414,1.957,4.371,4.372,4.371 c2.415,0,4.371-1.957,4.371-4.371V172.109c0-12.053-9.804-21.857-21.857-21.857H101.62c-2.415,0-4.372,1.957-4.372,4.372 C97.248,157.038,99.207,158.995,101.62,158.995z"></path> <path d="M203.153,303.935h107.829c2.415,0,4.371-1.955,4.371-4.373v-44.385c0-2.416-1.956-4.371-4.371-4.371h-6.052l13.506-18.012 l13.957,18.012h-6.614c-2.415,0-4.372,1.955-4.372,4.371v44.385c0,2.418,1.957,4.373,4.372,4.373h34.471 c6.014,0,10.908-4.895,10.908-10.908V160.091c0-2.415-1.957-4.372-4.372-4.372s-4.371,1.957-4.371,4.372v132.936 c0,1.174-0.991,2.164-2.165,2.164h-30.1v-35.643h9.684c2.088,0,3.845-1.043,4.703-2.791c0.857-1.746,0.605-3.775-0.675-5.428 l-21.119-27.254c-1.079-1.393-2.688-2.168-4.391-2.172c-1.71,0.012-3.298,0.828-4.357,2.24l-20.416,27.225 c-1.247,1.66-1.475,3.682-0.608,5.414c0.863,1.73,2.619,2.764,4.694,2.764h8.946v35.643H203.153c-3.574,0-6.48-2.906-6.48-6.48 v-124.79c0-3.576,2.906-6.482,6.48-6.482h132.133c2.414,0,4.371-1.955,4.371-4.372c0-2.411-1.957-4.371-4.371-4.371H203.153 c-8.395,0-15.222,6.83-15.222,15.225v124.79C187.93,297.106,194.759,303.935,203.153,303.935z"></path> </g> </g> </g></svg>
+                <div>Contract Logistics</div>
+            </div>
+        </div>
+
+        <div class="iconsFeatures">
+            <div class="hov6">
+                <svg width="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 2h14v4h6v16H2V2zm18 6h-4v2h2v2h-2v2h2v2h-2v2h2v2h2V8zm-6-4H4v16h2v-2h6v2h2V4zM6 6h2v2H6V6zm6 0h-2v2h2V6zm-6 4h2v2H6v-2zm6 0h-2v2h2v-2zm-6 4h2v2H6v-2zm6 0h-2v2h2v-2z" fill="#000000"></path> </g></svg>
+                <div>Free Trade Zone</div>
+            </div>
+        </div>
+
+        <div class="iconsFeatures">
+            <div class="hov7">
+                <svg width="50px" viewBox="0 0 1024 1024" fill="#000000" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M107.19232 617.00096h562.14528v77.76256H260.36224c-12.19584-33.49504-44.34944-57.4976-82.0224-57.4976-37.10976 0-68.864 23.296-81.46944 56.02304a37.2224 37.2224 0 0 1-26.90048-35.74784v-3.30752a37.2224 37.2224 0 0 1 37.2224-37.23264z m133.20192 98.85696a65.024 65.024 0 0 1-64.95232 64.94208c-35.79904 0-64.94208-29.1328-64.94208-64.94208s29.14304-64.95232 64.94208-64.95232a65.024 65.024 0 0 1 64.95232 64.95232z m-19.8656 0a45.13792 45.13792 0 0 0-45.08672-45.08672c-24.86272 0-45.07648 20.23424-45.07648 45.08672s20.224 45.07648 45.07648 45.07648a45.11744 45.11744 0 0 0 45.08672-45.07648z m676.32128 0c0 35.80928-29.14304 64.94208-64.95232 64.94208s-64.94208-29.1328-64.94208-64.94208 29.1328-64.95232 64.94208-64.95232 64.95232 29.14304 64.95232 64.95232z m-19.85536 0c0-24.86272-20.23424-45.08672-45.08672-45.08672s-45.07648 20.23424-45.07648 45.08672 20.224 45.07648 45.07648 45.07648 45.08672-20.21376 45.08672-45.07648zM991.56992 529.3056v146.8416c0 6.85056-5.56032 12.41088-12.41088 12.41088h-64.88064c-13.74208-30.21824-44.17536-51.3024-79.48288-51.3024s-65.75104 21.08416-79.49312 51.3024h-43.776a12.41088 12.41088 0 0 1-12.41088-12.41088V381.22496c0-6.8608 5.56032-12.41088 12.41088-12.41088h163.38944c6.85056 0 17.27488 2.28352 24.82176 12.41088l91.83232 148.08064z m-57.9072-32.26624l-55.83872-92.66176c-4.31104-7.97696-9.61536-12.40064-28.54912-12.40064H747.9296c-6.85056 0-12.41088 5.55008-12.41088 12.40064v92.66176c0 6.8608 5.56032 12.41088 12.41088 12.41088h173.32224c6.85056 0 12.41088-5.55008 12.41088-12.41088z m48.384 141.04576a11.58144 11.58144 0 0 0-23.16288 0v21.93408a11.58144 11.58144 0 0 0 23.16288 0v-21.93408zM32.43008 594.78016h636.90752V243.2H32.43008v351.58016z"></path></g></svg>
+                <div>Transportation</div>
+            </div>
+        </div>
+
+        <div class="iconsFeatures">
+            <div class="hov8">
+                <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" viewBox="0 0 256 140" enable-background="new 0 0 256 140" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M103.123,97.792c-11.112,0-20.104,8.992-20.104,20.104S92.011,138,103.123,138c11.112,0,20.104-8.992,20.104-20.104 S114.235,97.792,103.123,97.792z M103.123,125.597c-4.221,0-7.7-3.479-7.7-7.7c0-4.221,3.479-7.7,7.7-7.7c4.221,0,7.7,3.479,7.7,7.7 C110.823,122.117,107.344,125.597,103.123,125.597z M215.766,97.936c-11.112,0-20.104,8.992-20.104,20.104 s8.992,20.104,20.104,20.104c11.112,0,20.104-8.992,20.104-20.104S226.878,97.936,215.766,97.936z M215.766,125.74 c-4.221,0-7.7-3.479-7.7-7.7c0-4.221,3.479-7.7,7.7-7.7c4.221,0,7.7,3.479,7.7,7.7C223.467,122.261,219.987,125.74,215.766,125.74z M57,106.678c0,3.898,3.486,7.24,7.384,7.24h10.438c0.804,0,1.593-1.009,1.74-1.74c2.193-12.574,13.33-21.259,26.562-21.259 s24.198,8.721,26.391,21.295c0.146,0.804,0.682,1.463,1.486,1.463h20v-111H57V106.678z M252.26,99.132h-4.349V79.997 c0-6.433-4.801-11.307-11.307-11.307h-20.875c-0.439,0-0.956-0.233-1.249-0.525l-32.532-31.665c-1.462-1.462-2.829-2.747-4.949-2.82 h-19v80h30c0.804,0,1.489-0.768,1.635-1.499c2.193-12.574,12.899-22.115,26.131-22.115c13.232,0,24.198,9.577,26.391,22.151 c0.146,0.804,1.471,1.704,2.275,1.704h1.74c4.167,0,7.828-3.751,7.828-7.845v-5.41C254,99.86,253.138,99.132,252.26,99.132z M199.203,68.689H168.76c-0.877,0-1.74-0.862-1.74-1.74L167,44.364c0-0.877,0.882-1.769,1.76-1.769h6.089 c0.439,0,1.325,0.483,1.691,0.775l23.534,22.71C200.95,67.176,200.592,68.689,199.203,68.689z M47,49.678H14v-8h33V49.678z M47,71.678H2v8h45V71.678z M47,56.678H9v8h38V56.678z"></path> </g></svg>
+                <div>Express Delivery</div>
+            </div>
+        </div>
+
+        <div class="iconsFeatures">
+            <div class="hov9">
+                <svg fill="#000000" width="50px" viewBox="-2 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m14.494 20.659c-.873.162-1.62.614-2.155 1.25l-.005.006c-.399.521-1.021.854-1.721.854-.127 0-.251-.011-.372-.032l.013.002v-.013c-.024.001-.052.002-.08.002s-.056-.001-.084-.002h.004v.013c-.108.019-.232.03-.359.03-.7 0-1.322-.333-1.717-.849l-.004-.005c-.54-.642-1.287-1.094-2.137-1.252l-.023-.004c-.22-.049-.473-.077-.733-.077-1.539 0-2.848.986-3.329 2.361l-.008.025 1.182.395c.322-.9 1.167-1.533 2.16-1.533.18 0 .355.021.523.06l-.015-.003c.606.114 1.121.438 1.479.892l.004.005c.609.744 1.528 1.215 2.557 1.215.045 0 .09-.001.135-.003h-.006c.117 0 .24-.006.37-.014.128.008.252.014.37.014.038.002.084.003.129.003 1.029 0 1.947-.471 2.552-1.209l.005-.006c.362-.459.878-.783 1.468-.894l.015-.002c.153-.036.328-.057.508-.057.993 0 1.839.633 2.155 1.517l.005.016 1.182-.395c-.489-1.4-1.798-2.386-3.337-2.386-.26 0-.513.028-.756.081l.023-.004z"></path><path d="m3.191 11.826c-.51 0-.923-.413-.923-.923.001-.469.352-.855.805-.913h.005v.006l.554.1c.288.159.48.46.48.807v.001c0 .255-.104.486-.271.654-.166.166-.396.269-.649.27zm1.131-6.198 2.72-.954h6.263l2.72.954v2.282l-5.851-.96-5.851.96zm4.017-4.382h3.67l.589 2.181h-4.848zm8.379 8.847.554-.1v-.005c.458.058.808.445.81.913 0 .51-.413.923-.923.923-.51 0-.923-.413-.923-.923v-.001c0-.347.192-.649.475-.805l.005-.002zm-11.618 9.563h.006c.323 0 .639.029.946.085l-.032-.005c1.073.198 1.993.746 2.661 1.519l.005.006c.154.19.34.347.55.465l.01.005v-.018l.903.08h.038l.907-.091v.032c.22-.123.406-.28.557-.465l.003-.003c.672-.779 1.592-1.327 2.637-1.521l.028-.004c.276-.052.594-.083.919-.084h.001.005c.338 0 .668.036.985.106l-.03-.006 4.143-11.134-3.077-.506v-3.37l-3.345-1.174-.96-3.571h-5.578l-.96 3.571-3.345 1.174v3.37l-3.077.506 4.143 11.134c.287-.064.617-.1.955-.1h.006z"></path></g></svg>
+                <div>Shipping Agency</div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="dynamic">
+        <div>
+            <h1> 59 </h1>
+            <div> countries </div>
+        </div>
+        <div>
+            <h1> 24 </h1>
+            <div> Locations in India </div>
+        </div>
+        <div>
+            <h1> 38+ </h1>
+            <div> Years </div>
+        </div>
+        <div>
+            <h1> 7 </h1>
+            <div> Infrastructures </div>
+        </div>
+        <div>
+            <h1> 4 </h1>
+            <div> Min Ft. Warehousing </div>
+        </div>
+        <div>
+            <h1> 2 </h1>
+            <div> Free Trade Zones </div>
+        </div>
+        <div>
+            <h1> 10000+ </h1>
+            <div> Pincodes </div>
+        </div>
+        
+    </section>
+
+
+    <h2 class="showcase"> <b> ShowCase </b> </h2>
+
+    <div class="showcase_content">
+        <video src="C:\Users\chitl\Downloads\video_preview_h264.mp4" width="700px" controls muted loop autoplay></video>
+
+        <div> 
+            <b> Mpars </b> continually invests in all areas necessary to ensure that high quality of services are provided to customers.
+
+            To this end, we have designed and constructed a series of strategically located logistics facilities as well as built a strong road transportation fleet across Asia.
+
+           <b> Mpars </b> has facilities across Delhi, Gurgaon, Mumbai, Pune, Chennai, Bangalore, Kolkata, and Lucknow. With over a total ground coverage of 2.5 million sq.ft., Indev Infra handles Primary & Secondary Operations, RMA and Spare Parts Logistics. We are ISO 9001-2015 Certified and perform with strong operational excellence.
+
+           <div>
+           <button> Know More </button>
+           </div>
+
+        </div>
+
+    </div>
+
+
+
+    <h2 class="client"> <b> Hear From Our Clients </b> </h2>
+
+
+    <section class="slides">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" style="height: 400px;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+                <p class="client_content">It is our privilege to be associated with MPARS for more than 2 decades. We really enjoy your association with 100% professional approach. MPARS have always given quality output in all the projects you undertook, which is commendable.</p>
+            <img class="image" src="https://car-logos.net/wp-content/uploads/2023/03/kia-logo1-scaled.webp" class="d-block " alt="..." width="200px">
+            <div class="carousel-caption d-none d-md-block">
+                <!-- <h5>First slide label</h5> -->
+                
+            </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <p class="client_content">The MPARS Platform embraces our Plant & Business strategy perfectly! They offer a Variety of Logistics Solutions and the services are commendable. We love the fact that the Indev Infra supports Multiple logistic solutions in Ocean as well as Air with competitive pricing. We can see the Benefits to our team & to the company as a whole. It was easier for us to produce more cars and the price was better than anything out there. All the Best to MPARS Team.</p>
+            <img class="image" src="https://logos-world.net/wp-content/uploads/2021/09/MG-Symbol.png" class="d-block " alt="..." width="200px">
+            <div class="carousel-caption d-none d-md-block">
+                <!-- <h5>Second slide label</h5> -->
+                
+            </div>
+            </div>
+            <div class="carousel-item">
+                <p class="client_content">As a manufacturing company, our results and work procedures totally depend upon the timely availability of Imported Raw Materials and for this requirement of a reliable service provider is crucial. MPARS has proved to be an extremely trustworthy and efficient service provider to us and we are very grateful for your efforts and work ethics. It has been an honor to be associated with your company and it would be great if we could extend this partnership for more years to come.</p>s
+            <img class="image" src="https://tse4.mm.bing.net/th/id/OIP.yevBCWXrDlra9iqRaZku4QHaEK?pid=Api&P=0&h=180" class="d-block " alt="..." width="200px">
+            <div class="carousel-caption d-none d-md-block">
+                <!-- <h5>Third slide label</h5> -->
+                
+            </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    </section>
+    
+
+
+    <footer>
+        <section>
+            <div class="footer1">
+                <div>
+                    <h2> Mpars Private Limited </h2>
+                    <p> An Integrated Logistics and Supply Chain Enterprise </p>
+                </div>
+                
+                
+                
+            
+        
+
+            <div>
+                <ol>
+                    
+                        <h2> Quick Links </h2>
+                    
+                    <li>>   Downloads</li>
+                    <li>>   Credentials</li>
+                    <li>>   KLN</li>
+                </ol>
+            </div>
+
+            <div>
+                <ol>
+                    
+                        <h2> Others </h2>
+                    
+                    <li>>  Policies</li>
+                    <li>>  Awards</li>
+                    <li>>  News and Updates</li>
+                    <li>>  CSR</li>
+                </ol>
+            </div>
+
+            <div>
+                <ol>
+                    
+                        <h2> Contact Us</h2>
+                    
+                    <div>
+                       <p>Manyata Tech Park,6th Floor,</p> 
+                       <p>Nagawara,Bangalore,</p> 
+                        <p>560045.</p>
+                   
+                    <p>corporate@Mpars.com</p>
+                 </div>
+                </ol>
+
+                        <svg class="foot5" width="30px" height="30px" padding="10px" viewBox="0 0 48 48" version="1.1" id="Shopicons" xmlns="http://www.w3.org/2000/svg" x="0" y="0" xml:space="preserve" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style>.st1{fill:#fff}.st2,.st3{fill:none;stroke:#666;stroke-width:4;stroke-miterlimit:10}.st3{stroke-width:6}</style> <g id="facebook_00000008112799362506850770000006163283146650373774_"> <path d="M0 .006h48v48H0v-48z" fill="none"></path> <path d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20S35.046 4 24 4zm2 35.861V28h5v-4h-5v-3c0-1.103.897-2 2-2h3v-4h-3c-3.309 0-6 2.691-6 6v3h-5v4h5v11.861C14.12 38.872 8 32.144 8 24c0-8.823 7.178-16 16-16s16 7.177 16 16c0 8.144-6.12 14.872-14 15.861z"></path> </g> </g></svg>
+                        <svg class="foot5" fill="#ffffff" width="30px" height="30px" padding="10px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M128,84a44,44,0,1,0,44,44A44.04978,44.04978,0,0,0,128,84Zm0,80a36,36,0,1,1,36-36A36.04061,36.04061,0,0,1,128,164ZM172,32H84A52.059,52.059,0,0,0,32,84v88a52.059,52.059,0,0,0,52,52h88a52.059,52.059,0,0,0,52-52V84A52.059,52.059,0,0,0,172,32Zm44,140a44.04978,44.04978,0,0,1-44,44H84a44.04978,44.04978,0,0,1-44-44V84A44.04978,44.04978,0,0,1,84,40h88a44.04978,44.04978,0,0,1,44,44ZM188,76a8,8,0,1,1-8-8A8.00917,8.00917,0,0,1,188,76Z"></path> </g></svg>
+                        <svg class="foot5" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="30px" height="30px" padding="10px" viewBox="0 0 31.812 26"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.877,2.000 C22.519,2.000 24.382,2.652 25.426,3.738 C26.724,3.486 27.949,3.025 29.050,2.386 C28.625,3.687 27.718,4.779 26.540,5.469 C27.693,5.332 28.797,5.035 29.820,4.590 C29.054,5.707 28.087,6.690 26.971,7.477 C26.981,7.715 26.987,7.955 26.987,8.195 C26.987,15.562 21.445,24.000 10.939,24.000 C7.715,24.000 4.507,23.133 1.982,21.551 C2.428,21.605 2.883,21.631 3.343,21.631 C6.019,21.631 8.482,20.740 10.439,19.242 C7.937,19.199 5.827,17.586 5.103,15.373 C5.450,15.437 5.810,15.473 6.178,15.473 C6.696,15.473 7.203,15.406 7.681,15.277 C5.068,14.768 3.100,12.514 3.100,9.813 C3.100,9.787 3.100,9.764 3.100,9.740 C3.871,10.158 4.750,10.410 5.687,10.440 C4.154,9.437 3.147,7.734 3.147,5.799 C3.147,4.777 3.428,3.818 3.919,2.998 C6.735,6.367 10.945,8.588 15.693,8.822 C15.594,8.414 15.543,7.984 15.543,7.553 C15.543,4.473 17.721,2.000 20.877,2.000 M29.820,4.590 L29.825,4.590 M20.877,-0.000 C17.033,-0.000 14.060,2.753 13.614,6.552 C10.425,5.905 7.524,4.204 5.440,1.711 C5.061,1.257 4.503,0.998 3.919,0.998 C3.867,0.998 3.815,1.000 3.763,1.004 C3.123,1.055 2.547,1.413 2.216,1.966 C1.525,3.122 1.159,4.447 1.159,5.799 C1.159,6.700 1.321,7.579 1.625,8.400 C1.300,8.762 1.113,9.238 1.113,9.740 L1.113,9.813 C1.113,11.772 1.882,13.589 3.160,14.952 C3.087,15.294 3.103,15.655 3.215,15.998 C3.657,17.348 4.459,18.510 5.499,19.396 C4.800,19.552 4.079,19.631 3.343,19.631 C2.954,19.631 2.577,19.609 2.222,19.565 C2.141,19.556 2.061,19.551 1.981,19.551 C1.148,19.551 0.391,20.078 0.108,20.886 C-0.202,21.770 0.140,22.753 0.932,23.249 C3.764,25.023 7.318,26.000 10.939,26.000 C17.778,26.000 22.025,22.843 24.383,20.195 C27.243,16.984 28.907,12.718 28.972,8.455 C29.899,7.682 30.717,6.790 31.410,5.792 C31.661,5.458 31.810,5.041 31.810,4.590 C31.810,3.909 31.473,3.308 30.958,2.946 C31.181,2.176 30.925,1.342 30.303,0.833 C29.940,0.537 29.496,0.386 29.049,0.386 C28.708,0.386 28.365,0.474 28.056,0.654 C27.391,1.040 26.680,1.344 25.931,1.562 C24.555,0.592 22.688,-0.000 20.877,-0.000 L20.877,-0.000 Z"></path> </g></svg>
+                        <svg class="foot5" fill="#ffffff" height="30px" width="30px"  padding="10px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M-143,145v512h512V145H-143z M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7 c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6 c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1 c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z"></path> </g></svg>
+                        <svg class="foot5" fill="#ffffff" height="30px" width="30px" padding="10px"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 455 455" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M379.493,301.961 c-3.861,16.75-17.563,29.118-34.057,30.96c-39.044,4.353-78.575,4.382-117.952,4.353c-39.361,0.029-78.892,0-117.948-4.353 c-16.498-1.841-30.199-14.21-34.04-30.96C70,278.114,70,252.061,70,227.499c0-24.562,0.065-50.603,5.556-74.45 c3.841-16.766,17.547-29.118,34.024-30.959c39.06-4.365,78.608-4.382,117.969-4.365c39.357-0.016,78.892,0,117.948,4.365 c16.498,1.841,30.199,14.193,34.057,30.959c5.495,23.847,5.446,49.888,5.446,74.45C385,252.061,384.984,278.114,379.493,301.961z"></path> <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M186.855,276.399c33.467-17.355,66.638-34.565,100.138-51.932 c-33.597-17.53-66.764-34.821-100.138-52.237V276.399z"></path> </g> </g></svg>
+
+            </div>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+</html>
